@@ -1,0 +1,17 @@
+	public linearSearch(int[] bigboyarray)
+	{
+
+        for (int i = 0; i < bigboyarray.length; i++)
+        {
+
+            if (bigboyarray[i] == searchValue)
+            {
+
+                return i;
+
+            }
+
+            return -1;
+
+        }
+ }
