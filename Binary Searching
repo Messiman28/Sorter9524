@@ -1,0 +1,17 @@
+Array.Sort(bigboyarray);
+            int input = Convert.ToInt32(Console.ReadLine());
+            int min = 0;
+            int max = bigboyarray.Length - 1;
+            int mid = (min + max) / 2;
+            int index = -1;
+            do
+            {
+                if (bigboyarray[mid] == input)
+                    index = mid;
+                else if (bigboyarray[mid] < input)
+                    min = mid + 1;
+                else
+                    max = mid - 1;
+                mid = (min + max) / 2;
+            } 
+            while ((min <= max) && (index == -1));
